@@ -1,2 +1,2 @@
-# Improved-Google-Translate-Extension
+# Improved Google Translate Extension
 US Accent + Better UI
