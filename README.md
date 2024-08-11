@@ -1,11 +1,15 @@
 # Improved Google Translate Extension
+### Improvements
+- Changed the voice translation's accent to only use the US accent 
+- Used better fonts and made a cleaner UI
+---
 ### Installing the Extension
 1. Download the [repository](https://github.com/bzmind/Improved-Google-Translate-Extension/archive/refs/heads/main.zip)
 2. Open Chrome `>` Click on the 3 dots `>` Extensions `>` Manage Extensions `>` Enable Developer Mode from top right `>` Click on Load Unpacked from top left `>` Select the repository folder (Make sure to select the most inner folder which contains all the files inside of it, not the parent folder)
 ---
 ### Enabling the pop-up translation
-In order to enable the pop-up translation:
-1. Right click on the extensions icon `>` Click on Options `>` Select your output language from "My Primary Language" `>` Check the pop-up behavior that you want (I use the second option) `>` Save
+Right-click on the extension's icon `>` Click on Options `>` Select your output language from "My Primary Language" `>` Check the pop-up behavior that you want (I use the second option) `>` Save
+
 <img src="https://github.com/user-attachments/assets/34b0889c-224a-4acc-bcec-bd0e988ac757" width="650">
 
 ---
