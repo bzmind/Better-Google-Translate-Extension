@@ -1,6 +1,6 @@
 # Improved Google Translate Extension
 ### Installing the Extension
-1. Download the repository
+1. Download the [repository](https://github.com/bzmind/Improved-Google-Translate-Extension/archive/refs/heads/main.zip)
 2. Open Chrome `>` Click on the 3 dots `>` Extensions `>` Manage Extensions `>` Enable Developer Mode from top right `>` Click on Load Unpacked from top left `>` Select the repository folder (Make sure to select the most inner folder which contains all the files inside of it, not the parent folder)
 ---
 ### Enabling the pop-up translation
