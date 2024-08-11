@@ -40,6 +40,20 @@
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Vazir-Regular';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Regular.woff2') format('woff2'),
+    url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vazir-Medium';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Medium.woff2') format('woff2'),
+    url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 
 .goog-inline-block {
   position: relative;
@@ -782,7 +796,7 @@ br {
 }
 
 .gtx-body:not(.gtx-body~.gtx-body) {
-  font-family: "Vazir-Medium-FD";
+  font-family: "Vazir-Regular";
   display: inline;
   font-size: 15px;
   margin: 5px auto;
@@ -803,7 +817,7 @@ br {
 }
 
 #translation table {
-  font-family: "Vazir-Medium-FD";
+  font-family: "Vazir-Regular-FD";
   font-size: 14px;
   margin-right: auto;
   margin-left: auto;

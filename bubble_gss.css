@@ -40,6 +40,20 @@
   font-weight: 900;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Vazir-Regular';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Regular.woff2') format('woff2'),
+    url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Vazir-Medium';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Medium.woff2') format('woff2'),
+    url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
 
 .jfk-bubble {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
