@@ -753,6 +753,7 @@
 }
 
 .gtx-content {
+  direction: ltr !important;
   color: #252525;
   font-family: "Vazir-Regular-FD";
   font-size: 14px;
