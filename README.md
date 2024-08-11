@@ -1,7 +1,7 @@
 # Improved Google Translate Extension
 ### Improvements
 - Changed the voice translation's accent to only use the US accent 
-- Used better fonts and made a cleaner UI
+- Used better fonts and made the UI cleaner
 ---
 ### Installing the Extension
 1. Download the [repository](https://github.com/bzmind/Improved-Google-Translate-Extension/archive/refs/heads/main.zip)
