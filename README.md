@@ -1,6 +1,6 @@
 # Improved Google Translate Extension
 ### Improvements
-- Changed the voice translation's accent to only use the US accent 
+- Changed the English voice translation's accent to US accent
 - Used better fonts and made the UI cleaner
 ---
 ### Installing the Extension
