@@ -44954,7 +44954,6 @@
         observer.observe(targetNode, config);
       }
 
-      // Usage
       waitForElement('#gtx-host', (element) =>
       {
         let bubbleParent = document.querySelector(".jfk-bubble.gtx-bubble");
@@ -44968,7 +44967,7 @@
         bubbleParent.style.right = "22px";
 
         let bubbleParentHeight = bubbleParent.getBoundingClientRect().height;
-        
+
         if (bubbleParentHeight < 0.98 * window.innerHeight)
           bubbleParent.style.paddingRight = "13px";
         else
