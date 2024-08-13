@@ -44961,17 +44961,17 @@
         bubbleParent.style.left = "";
         bubbleParent.style.bottom = "";
         bubbleParent.style.top = "5px";
-        if (document.documentElement.scrollHeight > document.documentElement.clientHeight)
-          bubbleParent.style.right = "22px";
-        else
-          bubbleParent.style.right = "5px";
+        bubbleParent.style.right = "22px";
 
         let bubbleParentHeight = bubbleParent.getBoundingClientRect().height;
 
         if (bubbleParentHeight < 0.98 * window.innerHeight)
           bubbleParent.style.paddingRight = "13px";
         else
+        {
+          bubbleParent.style.bottom = "5px";
           bubbleParent.style.paddingRight = "2px";
+        }
       });
     }
 

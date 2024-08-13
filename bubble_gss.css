@@ -84,9 +84,10 @@
 .jfk-bubble {
   max-height: 98.4vh;
   overflow-y: auto;
+  overflow-x: hidden;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   border-width: 0px;
   border-radius: 15px;
   border-style: solid;
@@ -96,7 +97,7 @@
 }
 
 .jfk-bubble.jfk-bubble.jfk-bubble {
-  z-index: 1201
+  z-index: 10000
 }
 
 .jfk-bubble-closebtn {
