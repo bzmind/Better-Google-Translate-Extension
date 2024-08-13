@@ -44957,14 +44957,14 @@
       waitForElement('#gtx-host', (element) =>
       {
         let bubbleParent = document.querySelector(".jfk-bubble.gtx-bubble");
-        let gtxHost = element;
-        let shadowRoot = gtxHost.shadowRoot;
-        let bubbleContent = shadowRoot.querySelector("#bubble-content");
 
         bubbleParent.style.left = "";
         bubbleParent.style.bottom = "";
         bubbleParent.style.top = "5px";
-        bubbleParent.style.right = "22px";
+        if (document.documentElement.scrollHeight > document.documentElement.clientHeight)
+          bubbleParent.style.right = "22px";
+        else
+          bubbleParent.style.right = "5px";
 
         let bubbleParentHeight = bubbleParent.getBoundingClientRect().height;
 
@@ -44990,7 +44990,7 @@
     this.host_.id = "gtx-host";
     module$exports$google3$third_party$javascript$safevalues$dom$elements$element.setCssText(this.host_, module$contents$google3$third_party$javascript$safevalues$builders$style_builders_safeStyle($jscomp$templatelit$1652379616$1, module$contents$gtx$Bubble_Bubble.MAX_WIDTH_ + "px"));
     this.root_ = this.host_.attachShadow({
-      mode: "open"
+      mode: "closed"
     });
     gtx.get(chrome.runtime.getURL("popup_css_compiled.css"),
       goog.bind(this.handleGetCSS, this, a))
