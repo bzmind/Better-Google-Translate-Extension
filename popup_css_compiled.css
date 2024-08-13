@@ -5,6 +5,7 @@
   font-weight: 100;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Light-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Light-FD.woff2') format('woff2'),
@@ -12,6 +13,7 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Regular-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Regular-FD.woff2') format('woff2'),
@@ -19,6 +21,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Medium-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Medium-FD.woff2') format('woff2'),
@@ -26,6 +29,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Bold-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Bold-FD.woff2') format('woff2'),
@@ -33,6 +37,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Black-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Black-FD.woff2') format('woff2'),
@@ -40,6 +45,7 @@
   font-weight: 900;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Regular';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Regular.woff2') format('woff2'),
@@ -47,6 +53,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Medium';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Medium.woff2') format('woff2'),
@@ -925,7 +932,8 @@ br {
   margin-top: 9px;
   padding: 10px;
   text-align: center;
-  width: 400px
+  width: 100%;
+  min-width: 400px;
 }
 
 .gtx-a {
@@ -938,7 +946,10 @@ br {
   text-decoration: underline
 }
 
-#buttons {
+#buttons {  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 16px
 }
 

@@ -5,6 +5,7 @@
   font-weight: 100;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Light-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Light-FD.woff2') format('woff2'),
@@ -12,6 +13,7 @@
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Regular-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Regular-FD.woff2') format('woff2'),
@@ -19,6 +21,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Medium-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Medium-FD.woff2') format('woff2'),
@@ -26,6 +29,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Bold-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Bold-FD.woff2') format('woff2'),
@@ -33,6 +37,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Black-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Black-FD.woff2') format('woff2'),
@@ -40,6 +45,7 @@
   font-weight: 900;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Regular';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Regular.woff2') format('woff2'),
@@ -47,6 +53,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Vazir-Medium';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Medium.woff2') format('woff2'),
@@ -55,7 +62,27 @@
   font-style: normal;
 }
 
+.jfk-bubble.gtx-bubble::-webkit-scrollbar-thumb {
+  border: 7px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 10000px;
+  background-color: #d3d3d3;
+}
+
+.jfk-bubble.gtx-bubble::-webkit-scrollbar-thumb:hover {
+  border: 7px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 10000px;
+  background-color: #7a7a7a;
+}
+
+.jfk-bubble.gtx-bubble::-webkit-scrollbar {
+  width: 22px;
+}
+
 .jfk-bubble {
+  max-height: 98.4vh;
+  overflow-y: auto;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
   background-color: #fff;
   position: absolute;
