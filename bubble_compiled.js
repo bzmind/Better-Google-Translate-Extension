@@ -45058,7 +45058,6 @@
   };
   module$contents$gtx$Bubble_Bubble.EXTRA_CSS_CLASS_ = "gtx-bubble";
   module$contents$gtx$Bubble_Bubble.MAX_WIDTH_ = 400;
-  module$contents$gtx$Bubble_Bubble.MAX_LENGTH_ = 5000; // EDITED (Default: 250)
   module$contents$gtx$Bubble_Bubble.SHOW_TRANSLATE_ICON_ = !0;
   module$contents$gtx$Bubble_Bubble.DETECT_LANGUAGE_ = !1;
   module$contents$gtx$Bubble_Bubble.prototype.host_ = null;
@@ -45087,7 +45086,7 @@
       if (module$contents$gtx$Bubble_optionsInBubble.get_showBubble() != module$contents$gtx$Options_Options.showBubble.NONE)
       {
         var b = window.getSelection(),
-          c = b.toString().trim();
+          c = b.toString().trim().replace(/\n/g, ' ');
         module$contents$gtx$Bubble_bubbleCheck(c) && (module$contents$gtx$Options_Options.I18N_DETECT_LANGUAGE ? module$contents$gtx$Bubble_detectSelectionLanguage(b, function (d)
         {
           if (!module$contents$gtx$Bubble_optionsInBubble.isMyLanguage(d))
@@ -45161,7 +45160,7 @@
     module$contents$gtx$Bubble_bubbleCheck = function (a)
     {
       var b = /^[0-9!@#$\u20ac\u00a3%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
-      return 0 < a.length && module$contents$gtx$Bubble_noBubbleExists() && a.length < module$contents$gtx$Bubble_Bubble.MAX_LENGTH_ && !b.test(a) && window.innerWidth > module$contents$gtx$Bubble_Bubble.MAX_WIDTH_
+      return 0 < a.length && module$contents$gtx$Bubble_noBubbleExists() && !b.test(a) && window.innerWidth > module$contents$gtx$Bubble_Bubble.MAX_WIDTH_
     },
     module$contents$gtx$Bubble_afterTranslatorSet =
       function (a, b)
