@@ -45086,7 +45086,7 @@
       if (module$contents$gtx$Bubble_optionsInBubble.get_showBubble() != module$contents$gtx$Options_Options.showBubble.NONE)
       {
         var b = window.getSelection(),
-          c = b.toString().trim().replace(/\n/g, ' ');
+          c = b.toString().trim().replace(/\n+/g, "\n").replace(/-\n/g, '').replace(/\n/g, ' ');
         module$contents$gtx$Bubble_bubbleCheck(c) && (module$contents$gtx$Options_Options.I18N_DETECT_LANGUAGE ? module$contents$gtx$Bubble_detectSelectionLanguage(b, function (d)
         {
           if (!module$contents$gtx$Bubble_optionsInBubble.isMyLanguage(d))
