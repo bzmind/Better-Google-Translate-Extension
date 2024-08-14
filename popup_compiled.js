@@ -6855,7 +6855,7 @@
     chrome.tabs.query({
       active: !0,
       currentWindow: !0
-    }, function (a) { chrome.scripting.executeScript({ function: function () { var b = window.getSelection().toString().trim().replace(/\n/g, ' '); chrome.runtime.sendMessage({ action: "translateSelectedText", query: b, source: "popup" }) }, target: { tabId: a[0].id, allFrames: !0 } }) })
+    }, function (a) { chrome.scripting.executeScript({ function: function () { var b = window.getSelection().toString().trim().replace(/\n+/g, "\n").replace(/-\n/g, '').replace(/\n/g, ' '); chrome.runtime.sendMessage({ action: "translateSelectedText", query: b, source: "popup" }) }, target: { tabId: a[0].id, allFrames: !0 } }) })
   }, handleNewTranslation = function () { showSearchBar(); goog.style.setElementShown(goog.dom.getElement("more"), !1); goog.dom.getElement("text-input").focus() }, showSearchBar = function ()
   {
     goog.dom.getElement("text-input").value = ""; goog.style.setElementShown(goog.dom.getElement("search-bar"),
