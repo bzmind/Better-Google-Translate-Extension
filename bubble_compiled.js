@@ -44958,20 +44958,17 @@
       {
         let bubbleParent = document.querySelector(".jfk-bubble.gtx-bubble");
 
-        bubbleParent.style.left = "";
+        bubbleParent.style.left = `${window.innerWidth - 400}px`;
         bubbleParent.style.bottom = "";
         bubbleParent.style.top = "5px";
-        bubbleParent.style.right = "22px";
+        bubbleParent.style.right = "";
 
         let bubbleParentHeight = bubbleParent.getBoundingClientRect().height;
 
         if (bubbleParentHeight < 0.98 * window.innerHeight)
           bubbleParent.style.paddingRight = "13px";
         else
-        {
-          bubbleParent.style.bottom = "5px";
           bubbleParent.style.paddingRight = "2px";
-        }
       });
     }
 

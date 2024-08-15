@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box !important;
+}
+
 @font-face {
   font-family: 'Vazir-Thin-FD';
   src: url('chrome-extension://__MSG_@@extension_id__/fonts/Vazir/Vazir-Thin-FD.woff2') format('woff2'),
