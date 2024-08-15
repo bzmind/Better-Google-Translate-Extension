@@ -44218,7 +44218,7 @@
       showCloseBox: c,
       uid: d
     }, b);
-    a = '<div class="' + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble") + '" style="filter: none !important;" role="alertdialog"' + (module$contents$soy_$$isTruthyNonEmpty(d) ? ' aria-describedby="' + module$contents$soy_$$escapeHtmlAttribute(d) + '"' : "") + (goog.DEBUG && module$contents$soy_$$getDebugSoyTemplateInfo() ?
+    a = '<div class="' + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble") + ' role="alertdialog"' + (module$contents$soy_$$isTruthyNonEmpty(d) ? ' aria-describedby="' + module$contents$soy_$$escapeHtmlAttribute(d) + '"' : "") + (goog.DEBUG && module$contents$soy_$$getDebugSoyTemplateInfo() ?
       ' data-debug-soy="jfk.templates.bubble.main javascript/jfk/bubble/bubble.soy:14"' : "") + '><div class="' + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble-content-id") + '"' + (module$contents$soy_$$isTruthyNonEmpty(d) ? ' id="' + module$contents$soy_$$escapeHtmlAttribute(d) + '"' : "") + "></div>";
     module$contents$soy_$$isTruthyNonEmpty(c) && (a += '<div class="' + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble-closebtn-id") + " " + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble-closebtn") + '" aria-label="',
       a += module$contents$soy_$$normalizeHtml("Close"), a += '" role="button" tabindex=0></div>');
