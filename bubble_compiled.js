@@ -44958,7 +44958,7 @@
       {
         let bubbleParent = document.querySelector(".jfk-bubble.gtx-bubble");
 
-        bubbleParent.style.left = `${window.innerWidth - 400}px`;
+        bubbleParent.style.left = `${window.innerWidth - 443}px`;
         bubbleParent.style.bottom = "";
         bubbleParent.style.top = "5px";
         bubbleParent.style.right = "";
