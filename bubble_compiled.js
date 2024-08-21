@@ -44928,7 +44928,7 @@
   };
   module$contents$gtx$Bubble_Bubble.prototype.optimizePosition = function (a)
   {
-    if (parseInt(a.style.height, 10) > 150)
+    if (parseInt(a.style.height, 10) >= 130)
     {
       function waitForElement(selector, callback)
       {
