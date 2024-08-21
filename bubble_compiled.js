@@ -1,6 +1,7 @@
 /* Copyright 2014 Google */
 (function ()
 {
+  let isMoreThanMaxLength = false;
   var $jscomp = $jscomp || {};
   $jscomp.scope = {};
   $jscomp.arrayIteratorImpl = function (a)
@@ -44928,7 +44929,7 @@
   };
   module$contents$gtx$Bubble_Bubble.prototype.optimizePosition = function (a)
   {
-    if (parseInt(a.style.height, 10) >= 130)
+    if (isMoreThanMaxLength)
     {
       function waitForElement(selector, callback)
       {
@@ -44980,6 +44981,7 @@
     a <= d ? c = module$contents$jfk$ArrowAlignment_ArrowAlignment.LEFT_OR_TOP : a >=
       window.innerWidth - d && (c = module$contents$jfk$ArrowAlignment_ArrowAlignment.RIGHT_OR_BOTTOM);
     this.setPosition(b, c, 0, -10);
+    isMoreThanMaxLength = false;
   };
   module$contents$gtx$Bubble_Bubble.prototype.createShadowDom = function (a)
   {
@@ -45055,6 +45057,7 @@
   };
   module$contents$gtx$Bubble_Bubble.EXTRA_CSS_CLASS_ = "gtx-bubble";
   module$contents$gtx$Bubble_Bubble.MAX_WIDTH_ = 400;
+  module$contents$gtx$Bubble_Bubble.MAX_LENGTH_=250;
   module$contents$gtx$Bubble_Bubble.SHOW_TRANSLATE_ICON_ = !0;
   module$contents$gtx$Bubble_Bubble.DETECT_LANGUAGE_ = !1;
   module$contents$gtx$Bubble_Bubble.prototype.host_ = null;
@@ -45156,6 +45159,8 @@
     },
     module$contents$gtx$Bubble_bubbleCheck = function (a)
     {
+      if (a.length > module$contents$gtx$Bubble_Bubble.MAX_LENGTH_)
+        isMoreThanMaxLength = true;
       var b = /^[0-9!@#$\u20ac\u00a3%^&*()_+\-=\[\]{};':"\\|,.<>\/?]*$/;
       return 0 < a.length && module$contents$gtx$Bubble_noBubbleExists() && !b.test(a) && window.innerWidth > module$contents$gtx$Bubble_Bubble.MAX_WIDTH_
     },
