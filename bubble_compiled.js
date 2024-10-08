@@ -44968,7 +44968,10 @@
         let bubbleParentHeight = bubbleParent.getBoundingClientRect().height;
 
         if (bubbleParentHeight < 0.98 * window.innerHeight)
-          bubbleParent.style.paddingRight = "5px";
+        {
+          bubbleParent.style.paddingRight = "13px";
+          bubbleParent.style.left = `${window.innerWidth - 450}px`;
+        }
         else
           bubbleParent.style.paddingRight = "2px";
       });
