@@ -44219,7 +44219,7 @@
       showCloseBox: c,
       uid: d
     }, b);
-    a = '<div class="' + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble") + ' role="alertdialog"' + (module$contents$soy_$$isTruthyNonEmpty(d) ? ' aria-describedby="' + module$contents$soy_$$escapeHtmlAttribute(d) + '"' : "") + (goog.DEBUG && module$contents$soy_$$getDebugSoyTemplateInfo() ?
+    a = '<div class="' + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble") + '" role="alertdialog"' + (module$contents$soy_$$isTruthyNonEmpty(d) ? ' aria-describedby="' + module$contents$soy_$$escapeHtmlAttribute(d) + '"' : "") + (goog.DEBUG && module$contents$soy_$$getDebugSoyTemplateInfo() ?
       ' data-debug-soy="jfk.templates.bubble.main javascript/jfk/bubble/bubble.soy:14"' : "") + '><div class="' + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble-content-id") + '"' + (module$contents$soy_$$isTruthyNonEmpty(d) ? ' id="' + module$contents$soy_$$escapeHtmlAttribute(d) + '"' : "") + "></div>";
     module$contents$soy_$$isTruthyNonEmpty(c) && (a += '<div class="' + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble-closebtn-id") + " " + module$contents$soy_$$escapeHtmlAttribute("jfk-bubble-closebtn") + '" aria-label="',
       a += module$contents$soy_$$normalizeHtml("Close"), a += '" role="button" tabindex=0></div>');
@@ -44959,7 +44959,8 @@
       {
         let bubbleParent = document.querySelector(".jfk-bubble.gtx-bubble");
 
-        bubbleParent.style.left = `${window.innerWidth - 443}px`;
+        bubbleParent.style.position = 'fixed';
+        bubbleParent.style.left = `${window.innerWidth - 458}px`;
         bubbleParent.style.bottom = "";
         bubbleParent.style.top = "5px";
         bubbleParent.style.right = "";
@@ -44967,7 +44968,7 @@
         let bubbleParentHeight = bubbleParent.getBoundingClientRect().height;
 
         if (bubbleParentHeight < 0.98 * window.innerHeight)
-          bubbleParent.style.paddingRight = "13px";
+          bubbleParent.style.paddingRight = "5px";
         else
           bubbleParent.style.paddingRight = "2px";
       });
@@ -45057,7 +45058,7 @@
   };
   module$contents$gtx$Bubble_Bubble.EXTRA_CSS_CLASS_ = "gtx-bubble";
   module$contents$gtx$Bubble_Bubble.MAX_WIDTH_ = 400;
-  module$contents$gtx$Bubble_Bubble.MAX_LENGTH_=250;
+  module$contents$gtx$Bubble_Bubble.MAX_LENGTH_ = 250;
   module$contents$gtx$Bubble_Bubble.SHOW_TRANSLATE_ICON_ = !0;
   module$contents$gtx$Bubble_Bubble.DETECT_LANGUAGE_ = !1;
   module$contents$gtx$Bubble_Bubble.prototype.host_ = null;

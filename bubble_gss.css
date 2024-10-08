@@ -81,7 +81,7 @@
 }
 
 .jfk-bubble.gtx-bubble::-webkit-scrollbar {
-  width: 22px !important;
+  width: 21px !important;
   background-color: transparent !important;
 }
 
@@ -91,7 +91,7 @@
   overflow-x: hidden;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
   background-color: #fff;
-  position: fixed;
+  position: absolute;
   border-width: 0px;
   border-radius: 15px;
   border-style: solid;
@@ -248,5 +248,3 @@
   height: 19px;
   width: 19px
 }
-
-sentinel {}
