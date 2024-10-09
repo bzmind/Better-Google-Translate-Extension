@@ -110,7 +110,7 @@
 }
 
 .jfk-button .jfk-button-img {
-  margin-top: -3px;
+  margin-bottom: -5px;
   vertical-align: middle
 }
 
@@ -398,7 +398,7 @@
   font-weight: normal;
   height: 21px;
   line-height: 21px;
-  margin-right: 1px;
+  margin-right: 3px;
   min-width: 0;
   padding: 0
 }
@@ -426,7 +426,7 @@
 
 .jfk-button-flat.jfk-button-selected .jfk-button-img,
 .jfk-button-flat.jfk-button-hover .jfk-button-img {
-  opacity: 0.9
+  opacity: .85
 }
 
 .jfk-button-flat.jfk-button-disabled .jfk-button-img {
@@ -893,9 +893,11 @@ br {
 }
 
 #new-translation {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACwSURBVDjL1dC7DgFBFIDhn7dyi4YICo1Wxdp16bVeQLJP4P1EhYTNYo7CZs1OYma2kZhpv//MBf5wtTkQU/HlQxIEYU/VLwhQCIKwc+OQEIiy5OjicxQqT1IGdj7jiSB5MrHzacbfSeC6zDp/qCCcqNn5qsDP1O18afBGGX6haecLg7fsPCrwK50y/EbX9ZUPjaeMXJzC9J6bf4I7YwA22gh9G0FCH4DtFy4+Z/98vQBdY4VNV44h6QAAAABJRU5ErkJggg==);
+  background-image: url(chrome-extension://__MSG_@@extension_id__/icons/new_translation.png);
   -webkit-background-size: 90% 90%;
+  display: none;
   background-size: 90%;
+  background-repeat: no-repeat;
   float: right
 }
 
@@ -950,6 +952,10 @@ br {
   text-decoration: underline
 }
 
+.gtx-content #buttons .gtx-a:last-child {
+  margin-left: 0px !important;
+}
+
 #buttons {  
   display: flex;
   align-items: center;
@@ -962,6 +968,7 @@ br {
 }
 
 #translate-link {
+  display: none;
   text-align: right
 }
 
@@ -974,11 +981,10 @@ br {
 }
 
 .gtx-audio-button .jfk-button-img {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAACjSURBVDjLY2AYYmA1QwADI3FKy8HkfyA8zqBOjPL/YLqO4SWQ9YXBmbDy/1C2EMMGsBZNQsr/w/lMDCuAvKOElP+HeloQSPIxPAPynVAV/seAENHtYLoKyJpDnIb/DOZA2gBI3yRWQx6Q5gZ7nFYaQE4yJN5JW8B0PaanYaADRcMaBh5wsD7HDFZMLURGHEIL0UkDpoWExAfRQlLyJiMDDSAAALgghxq3YsGLAAAAAElFTkSuQmCC);
-  -webkit-background-size: 91% 91%;
-  background-size: 91%;
-  height: 21px;
-  width: 21px
+  background-image: url(chrome-extension://__MSG_@@extension_id__/icons/audio.png);
+  -webkit-background-size: 93% 93%;
+  background-size: 93%;
+  height: 22px;
+  background-repeat: no-repeat;
+  width: 22px
 }
-
-sentinel {}

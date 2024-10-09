@@ -41,7 +41,8 @@
       "resources": [
         "popup_css_compiled.css",
         "fonts/Vazir/*.woff2",
-        "fonts/Vazir/*.woff"
+        "fonts/Vazir/*.woff",
+        "icons/*"
       ],
       "matches": [
         "<all_urls>"
