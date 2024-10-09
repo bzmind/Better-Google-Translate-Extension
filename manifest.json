@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "description": "US Accent + Better UI",
   "default_locale": "en",
-  "name": "Improved Google Translate",
+  "name": "Better Google Translate",
   "permissions": [
     "activeTab",
     "contextMenus",
@@ -33,7 +33,7 @@
       "19": "icons/19.png",
       "38": "icons/38.png"
     },
-    "default_title": "Improved Google Translate",
+    "default_title": "Better Google Translate",
     "default_popup": "popup.html"
   },
   "web_accessible_resources": [

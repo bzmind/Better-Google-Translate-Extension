@@ -1,4 +1,4 @@
-# Improved Google Translate Extension
+# Better Google Translate Extension
 ### Improvements
 - Changed the English voice translation's accent to US accent
 - Used better fonts and made the UI cleaner
